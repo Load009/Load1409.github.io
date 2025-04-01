@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery, .services, .banquets, .rooms {
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .newsletter {
+            margin-top: 20px;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 70%;
+        }
+        .newsletter button {
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hotel Paradise</h1>
+        <img src="logo.png" alt="Hotel Logo" width="100">
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Hotel Paradise</h2>
+        <div class="gallery">
+            <h3>Gallery</h3>
+            <img src="gallery1.jpg" alt="Hotel Gallery Image 1" width="300">
+            <img src="gallery2.jpg" alt="Hotel Gallery Image 2" width="300">
+        </div>
+        <div class="services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>24/7 Room Service</li>
+                <li>Free Wi-Fi</li>
+                <li>Swimming Pool</li>
+                <li>Spa & Wellness Center</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Hotel Paradise, where luxury meets comfort. Our hotel offers the best in class services to ensure a memorable stay for our guests.</p>
+    </section>
+
+    <section id="facilities">
+        <h2>Facilities</h2>
+        <div class="banquets">
+            <h3>Banquets</h3>
+            <p>We offer spacious banquets for weddings, corporate events, and other special occasions.</p>
+        </div>
+        <div class="rooms">
+            <h3>Rooms</h3>
+            <p>Our rooms are designed to provide the utmost comfort and luxury, with modern amenities and stunning views.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Paradise Lane, Paradise City</p>
+        <p>Phone: +123 456 7890</p>
+        <div class="contact-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Contact No:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>Are you a new customer?</label>
+                <input type="radio" id="new-customer" name="customer-type" value="new" required>
+                <label for="new-customer">Yes</label>
+                <input type="radio" id="returning-customer" name="customer-type" value="returning" required>
+                <label for="returning-customer">No</label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.95373531531664!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d44e5c30b7c5!2sParadise%20Hotel!5e0!3m2!1sen!2sus!4v1625070000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact Us: 123 Paradise Lane, Paradise City | Phone: +123 456 7890 | Email: info@hotelparadise.com</p>
+        <p>
+            <a href="https://facebook.com/hotelparadise">Facebook</a> |
+            <a href="https://twitter.com/hotelparadise">Twitter</a> |
+            <a href="https://instagram.com/hotelparadise">Instagram</a>
+        </p>
+        <div class="newsletter">
+            <input type="email" placeholder="Subscribe to our newsletter">
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+
+</body>
+</html>

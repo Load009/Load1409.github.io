@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Name | One Page Website</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        form input[type="radio"] {
+            display: inline;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Hotel Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Our Hotel</h2>
+        <div class="gallery">
+            <img src="hotel1.jpg" alt="Hotel Image 1">
+            <img src="hotel2.jpg" alt="Hotel Image 2">
+        </div>
+        <h3>Our Services</h3>
+        <ul>
+            <li>24/7 Room Service</li>
+            <li>Free Wi-Fi</li>
+            <li>Swimming Pool</li>
+            <li>Luxury Dining</li>
+        </ul>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our luxurious hotel, where comfort meets elegance. We offer world-class amenities and an unforgettable stay.</p>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+        <h3>Banquets</h3>
+        <p>Perfect venue for weddings, conferences, and events.</p>
+        <h3>Rooms</h3>
+        <p>Spacious and elegant rooms for a comfortable stay.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Hotel Street, City, Country</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: contact@hotel.com</p>
+
+        <h3>Inquiry Form</h3>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Contact No." required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <label>
+                <input type="radio" name="customer" value="new" required> New Customer
+            </label>
+            <label>
+                <input type="radio" name="customer" value="returning"> Returning Customer
+            </label>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Google Map Embed -->
+        <iframe src="https://www.google.com/maps/embed?...your-map-url..." width="600" height="450"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact Us: Address | Phone: 123-456-7890 | Email: contact@hotel.com</p>
+        <div>
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+        <form>
+            <h3>Subscribe to our Newsletter</h3>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+
+</body>
+</html>

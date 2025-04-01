@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel Footer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Address: 123 Hotel St, City, Country</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: info@hotel.com</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com/hotel" target="_blank">Facebook</a>
+            <a href="https://twitter.com/hotel" target="_blank">Twitter</a>
+            <a href="https://instagram.com/hotel" target="_blank">Instagram</a>
+        </div>
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to Newsletter</h3>
+            <form action="subscribe.php" method="post">
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Hotel Logo">
+    </div>
+    <div class="hotel-name">
+        <h1>Hotel Name</h1>
+    </div>
+</header>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<style>
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    body {
+        padding-top: 50px; /* Adjust based on the height of the navbar */
+    }
+</style>
+
+
+
+
+<footer>
+    <table class="footer-table">
+        <tr>
+            <td>
+                <h3>Contact Information</h3>
+                <p>Address: 123 Hotel St, City, Country</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: info@hotel.com</p>
+            </td>
+            <td>
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com/hotel" target="_blank">Facebook</a><br>
+                <a href="https://twitter.com/hotel" target="_blank">Twitter</a><br>
+                <a href="https://instagram.com/hotel" target="_blank">Instagram</a>
+            </td>
+            <td>
+                <h3>Contact Us</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+                <h3>Subscribe to Newsletter</h3>
+                <form action="subscribe.php" method="post">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<style>
+    .footer-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .footer-table td {
+        padding: 10px;
+        vertical-align: top;
+    }
+</style>
+
+<td>
+    <h3>Follow Us</h3>
+    <a href="https://facebook.com/hotel" target="_blank">Facebook</a><br>
+    <a href="https://twitter.com/hotel" target="_blank">Twitter</a><br>
+    <a href="https://instagram.com/hotel" target="_blank">Instagram</a>
+    <div class="social-icons">
+        <a href="#" title="facebook"> 
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="twitter"> 
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="instagram">  
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+    </div>
+</td>
+
+<div class="social-icons"></div>
+    <a href="https://facebook.com/hotel" target="_blank" title="Facebook">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/hotel" target="_blank" title="Twitter">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://instagram.com/hotel" target="_blank" title="Instagram">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+</div>
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
